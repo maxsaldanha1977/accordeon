@@ -1,0 +1,7 @@
+{
+  "name": "accordeon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
