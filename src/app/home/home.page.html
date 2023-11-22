@@ -1,20 +1,33 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Clientes
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content padding>
+  
+    <app-accordion 
+     *ngFor="let technology of technologies" 
+     cliente="{{ technology.cliente }}" 
+     fantasia="{{ technology.fantasia }}" 
+     imgtel="{{ technology.imgtel }}"
+     telefone="{{ technology.telefone }}"
+     imgemail="{{ technology.imgemail }}" 
+     email="{{ technology.email }}"      
+     telefone="{{ technology.telefone }}"
+     infodicionais="{{ technology.infodicionais }}"
+     unidade="{{technology.unidade}}"
+     iconacesso="{{technology.iconacesso}}"
+     acesso="{{technology.acesso}}"
+     codempresa="{{technology.codempresa}}"
+     ldlink="{{technology.ldlink}}"
+     replica="{{technology.replica}}"
+     wslink="{{technology.wslink}}"
+     >
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    </app-accordion>
+
+  
 </ion-content>
